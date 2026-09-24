@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>À propos — Lucas Bazaud</title>
+  <meta name="description" content="À propos de Lucas Bazaud : lycéen passionné de développement, de serveurs et de nouvelles technologies, en apprentissage à travers ses projets personnels." />
+  <meta name="theme-color" content="#0b0e14" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("lb-portfolio-theme");
+        if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><span class="dot">&gt;</span> lucas.bazaud</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links" data-nav-links>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html" aria-current="page">À propos</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="experience.html">Parcours</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Changer de thème">☀️</button>
+        <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">// à propos</span>
+        <h1>Curieux, autonome, et toujours en train de construire quelque chose.</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container about-layout">
+        <div class="reveal">
+          <h2>Qui je suis</h2>
+          <p>
+            Je m'appelle Lucas Bazaud, je suis actuellement au lycée Jean de Beauce. Je ne suis ni ingénieur
+            ni développeur professionnel — je suis un lycéen qui apprend en faisant, principalement à travers
+            des projets personnels que je mène de bout en bout : de l'idée jusqu'à la mise en ligne ou la mise en service.
+          </p>
+          <p style="margin-top: 16px;">
+            Ce qui me pousse, c'est la curiosité : comprendre comment fonctionne un serveur, comment on administre
+            un système Linux, comment un site web tient debout, ou comment on construit une communauté autour d'un
+            projet de jeu. J'aime autant coder que configurer, autant créer que documenter.
+          </p>
+          <p style="margin-top: 16px;">
+            Mes deux stages en entreprise — à l'Université de Tours et chez EFFILUX — m'ont donné un premier aperçu
+            concret du monde professionnel de la technologie, et m'ont donné envie d'aller plus loin dans cette direction.
+          </p>
+        </div>
+
+        <div class="reveal">
+          <h2>Ce que j'explore</h2>
+          <ul class="interest-list">
+            <li>Développement web</li>
+            <li>Administration système &amp; Linux</li>
+            <li>Docker &amp; conteneurisation</li>
+            <li>Réseaux</li>
+            <li>Serveurs Minecraft</li>
+            <li>Serveurs FiveM</li>
+            <li>Développement Roblox</li>
+            <li>Électronique</li>
+            <li>Intelligence artificielle</li>
+            <li>Création de contenu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Comment j'apprends</h2>
+          <p>Pas de formation officielle en développement pour l'instant — juste beaucoup de pratique.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card reveal">
+            <h3>Par les projets</h3>
+            <p>Chaque projet personnel est une occasion d'apprendre un outil, un langage ou une méthode de plus.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Par la pratique</h3>
+            <p>Monter un serveur, casser quelque chose, le réparer — c'est comme ça que je retiens le mieux.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Par la communauté</h3>
+            <p>Discord, forums, documentation officielle : j'échange beaucoup avec d'autres passionnés.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span data-year></span> Lucas Bazaud — Fait avec HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-links">
+        <a href="mailto:Lucasbazaud28@gmail.com">Lucasbazaud28@gmail.com</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
